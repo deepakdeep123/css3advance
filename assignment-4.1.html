@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pure CSS3 Speech Bubbles Without Images</title>
+</head>
+<body>
+<!-- this is embedded css //-->
+<style type="text/css"> 
+body
+{
+	font-family: arial, helvetica, freesans, sans-serif;
+	font-size: 100%;
+	color: #333;
+	background-color: #ddd;
+}
+
+h1
+{
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0;
+}
+
+p.bubble
+{
+	position: relative;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	margin: 60px auto;
+	background-color: #fff;
+	border: 8px solid #666;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 2px 2px 4px #888;
+	-moz-box-shadow: 2px 2px 4px #888;
+	box-shadow: 2px 2px 4px #888;
+}
+
+
+
+p.bubble:before, p.bubble:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+p.speech:before
+{
+	left: 30px;
+	top: 100px;
+	border: 25px solid;
+	border-color: #666 transparent transparent #666;
+}
+
+p.speech:after
+{
+	left: 38px;
+	top: 100px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+}
+
+</style>
+<!-- An comment will help for more than one developer to understand the code and it is a good habit to work as a team //-->
+<h1>Pure CSS3 Speech Bubbles Without Images</h1>
+
+
+<p class="bubble speech">Acadgild Rocks!</p>
+
+
+</body>
+</html>

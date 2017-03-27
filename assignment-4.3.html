@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Circle to Square - CSS 3 - Transition</title>
+</head>
+<body>
+<!-- this is embedded css //-->
+<style type="text/css"> 
+.circle {
+  background: #e9256d;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: all .3s ease-in-out;
+}
+
+.circle:hover {
+  border-radius:0;  
+  cursor: pointer;
+}
+
+.text {
+  color: #56e825;
+  opacity: 0;
+  text-align: center;
+  margin-top: 40px;
+  transition: all .5s ease-in-out;
+}
+
+.circle:hover .text {
+  opacity: 1;
+  height: 100px;
+  width: 100px;
+  background: green;
+}
+</style>
+<!-- An comment will help for more than one developer to understand the code and it is a good habit to work as a team //-->
+<h1>Circle to Square - CSS 3 - Transition</h1>
+
+ <div class="circle">
+    <div class="text">   HELLO</div>
+  </div>
+
+
+
+</body>
+</html>

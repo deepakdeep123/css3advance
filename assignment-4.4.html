@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 Gradient</title>
+</head>
+<body>
+<!-- this is embedded css //-->
+<style>
+#grad1 {
+    height: 150px;
+    width: 200px;
+    float:left;
+    background: red; /* For browsers that do not support gradients */    
+    background: -webkit-radial-gradient(red, yellow, green); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(red, yellow, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(red, yellow, green); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(red, yellow, green); /* Standard syntax (must be last) */
+}
+
+#grad2 {
+    height: 150px;
+    width: 200px;
+    margin-left:20px;
+    float:left;
+    background: -webkit-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, red, orange, yellow, green, blue, indigo, violet); /* For Fx 3.6 to 15 */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Standard syntax (must be last) */
+}
+
+
+</style>
+<!-- An comment will help for more than one developer to understand the code and it is a good habit to work as a team //-->
+<h1>CSS3 Gradient</h1>
+
+<h3>Radial & Linear Gradient</h3>
+<div id="grad1"></div>
+
+
+<div id="grad2"></div>
+<!-- Internet Explorer 9 and earlier versions do not support gradients.//-->
+ 
+</body>
+</html>
